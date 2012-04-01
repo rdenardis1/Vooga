@@ -8,13 +8,15 @@ import java.net.URI;
 import java.nio.*;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+
+import buttons.Buttons;
+import buttons.OpenButton;
+import buttons.SaveButton;
+
 import com.golden.gamedev.Game;
 import com.golden.gamedev.gui.*;
 import com.golden.gamedev.gui.toolkit.*;
 import com.golden.gamedev.object.Sprite;
-import enemies.Buttons;
-import enemies.OpenButton;
-import enemies.SaveButton;
 import sprite.Enemy;
 import sprite.GameSprite;
 import sprite.Platform;
