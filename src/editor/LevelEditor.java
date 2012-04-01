@@ -66,8 +66,6 @@ public class LevelEditor
                 new BaseLoader(new BaseIO(this.getClass()), Color.PINK);
             for (GameSprite s : spriteList)
             {
-                System.out.println(s.getImageName());
-
                 s.setImage(loader.getImage(s.getImageName()));
             }
             return spriteList;
