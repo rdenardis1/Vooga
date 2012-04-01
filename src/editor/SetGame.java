@@ -9,7 +9,7 @@ import java.nio.*;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-import buttons.Buttons;
+import buttons.Button;
 import buttons.OpenButton;
 import buttons.SaveButton;
 
@@ -26,7 +26,7 @@ public class SetGame extends Game
 {
     private FrameWork framework;
     private static ArrayList<GameSprite> allSprites;
-    private ArrayList<Buttons> allButtons;
+    private ArrayList<Button> allButtons;
     private static final int MENU_START = 800;
 
     private TButton openButton;
@@ -40,7 +40,7 @@ public class SetGame extends Game
     public void initResources ()
     {
         myEditor = new LevelEditor();
-        allButtons = new ArrayList<Buttons>();
+        allButtons = new ArrayList<Button>();
 
         allSprites = new ArrayList<GameSprite>();
 
@@ -65,8 +65,8 @@ public class SetGame extends Game
         infoBox.add(l);
         infoBox.add(l2);
 
-        Buttons button =
-            new Buttons("Happy",
+        Button button =
+            new Button("Happy",
                         10,
                         140,
                         60,
@@ -75,8 +75,8 @@ public class SetGame extends Game
                         "resources/happy.jpg",
                         "enemy");
 
-        Buttons bowserbutton =
-            new Buttons("Bowser",
+        Button bowserbutton =
+            new Button("Bowser",
                         100,
                         140,
                         60,
@@ -90,8 +90,8 @@ public class SetGame extends Game
                             UIConstants.CENTER);
         l3.UIResource().put("Background Border Color", Color.LIGHT_GRAY);
 
-        Buttons platformbutton1 =
-            new Buttons("Platform1",
+        Button platformbutton1 =
+            new Button("Platform1",
                         10,
                         240,
                         60,
@@ -99,8 +99,8 @@ public class SetGame extends Game
                         getImage("resources/platform1.png"),
                         "resources/platform1.png",
                         "platform");
-        Buttons platformbutton2 =
-            new Buttons("Platform2",
+        Button platformbutton2 =
+            new Button("Platform2",
                         100,
                         240,
                         60,
@@ -156,7 +156,7 @@ public class SetGame extends Game
         framework.update();
         if (click())
         {
-            for (Buttons button : allButtons)
+            for (Button button : allButtons)
             {
 
                 if (button.getClicked())
