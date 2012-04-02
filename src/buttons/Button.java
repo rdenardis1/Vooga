@@ -1,11 +1,11 @@
-package enemies;
+package buttons;
 
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import com.golden.gamedev.gui.TButton;
 
 
-public class Buttons extends TButton
+public class Button extends TButton
 {
     private boolean pressed;
     private BufferedImage myImage;
@@ -13,7 +13,7 @@ public class Buttons extends TButton
     private String myType;
 
 
-    public Buttons (String name,
+    public Button (String name,
                     int x,
                     int y,
                     int width,
