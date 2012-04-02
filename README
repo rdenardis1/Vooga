@@ -1,1 +1,4 @@
-This is a README
+READEME
+
+In order to run our code you need the following external libraries in the build path. We are in the process of adding them into the repository. gson-2.1.jar GTGE_GUI_0_1_0.jar  golden_0_2_3.jar.
+ 
