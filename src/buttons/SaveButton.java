@@ -1,18 +1,17 @@
-package enemies;
+package buttons;
 
-import java.io.File;
-import javax.swing.JFileChooser;
+import java.awt.image.BufferedImage;
 import com.golden.gamedev.gui.TButton;
 import editor.SetGame;
 
 
-public class OpenButton extends TButton
+public class SaveButton extends TButton
 {
 
     SetGame myGame;
 
 
-    public OpenButton (String name,
+    public SaveButton (String name,
                        int x,
                        int y,
                        int width,
@@ -26,8 +25,7 @@ public class OpenButton extends TButton
 
     public void doAction ()
     {
-        myGame.openFile();
-
+        myGame.saveFile();
     }
 
 }

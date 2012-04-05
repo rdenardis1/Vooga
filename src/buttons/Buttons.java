@@ -1,4 +1,4 @@
-package enemies;
+package buttons;
 
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
